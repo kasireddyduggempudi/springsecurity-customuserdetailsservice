@@ -25,7 +25,7 @@ public class MongoConnection {
         client = new MongoClient("localhost", 27017);
 
         template = new MongoTemplate(client, "springsecuritytesting");
-        // here ecommerce is db name
+        // here springsecuritytesting is db name
         template.setReadPreference(ReadPreference.primaryPreferred());
 
         mongoOperations = template;
